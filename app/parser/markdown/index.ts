@@ -84,7 +84,9 @@ const comark: Parser<typeof Comark, ComarkOptions> = {
   },
   pkgName: 'comark',
   parse(code, options) {
-    return this.parse(code, options)
+    // old versions of comark use `parse`
+    const parse = this.parseMarkdown || (this as any).parse
+    return parse(code, options)
   },
   gui: () => import('./ComarkGui.vue'),
 }
