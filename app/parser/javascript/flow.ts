@@ -43,7 +43,7 @@ export const flow: Parser<any, Options> = {
   },
   pkgName: 'flow-parser',
   getModuleUrl: (pkgId) => `https://esm.sh/${pkgId}`,
-  init: (url) => importUrl(url, true),
+  init: (url) => importModule(url, { sandbox: true }),
   parse(code, options) {
     return this.parse(code, { ...options })
   },

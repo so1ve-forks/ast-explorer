@@ -53,7 +53,7 @@ const remark: Parser<typeof Remark, RemarkOptions> = {
         options?.directive && 'https://esm.sh/remark-directive',
         options?.gfm && 'https://esm.sh/remark-gfm',
         options?.raw && 'https://esm.sh/rehype-raw',
-      ].map((url) => url && importUrl(url)),
+      ].map((url) => url && importModule(url)),
     )
     for (const plugin of plugins) {
       if (plugin?.default) {

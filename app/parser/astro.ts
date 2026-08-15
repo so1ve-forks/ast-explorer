@@ -18,7 +18,7 @@ const astroCompiler: Parser<typeof Astro, Astro.ParseOptions> = {
   },
   pkgName: '@astrojs/compiler',
   async init(moduleUrl) {
-    const mod = await importUrl<typeof Astro>(moduleUrl)
+    const mod = await importModule<typeof Astro>(moduleUrl)
     const wasmURL = getJsdelivrUrl('@astrojs/compiler', '/dist/astro.wasm')
     await mod.initialize({ wasmURL })
     return mod

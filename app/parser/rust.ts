@@ -18,7 +18,7 @@ const syn: Parser<any, any> = {
   pkgName: 'astexplorer-syn',
   getModuleUrl: (pkgId) => getJsdelivrUrl(pkgId, `/astexplorer_syn.min.js`),
   init: async (url) => {
-    const mod = await importUrl(url)
+    const mod = await importModule(url)
     await mod.default()
     return mod
   },

@@ -146,7 +146,7 @@ function convertNode(node: TreeSitter.Node): any {
 
 const pkg = 'web-tree-sitter'
 async function loadTreeSitter() {
-  const treeSitter = await importUrl<typeof TreeSitter>(
+  const treeSitter = await importModule<typeof TreeSitter>(
     getJsdelivrUrl(pkg, '/tree-sitter.js'),
   )
   await treeSitter.Parser.init({

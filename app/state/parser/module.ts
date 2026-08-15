@@ -16,7 +16,10 @@ const parserModuleCache: Record<string, unknown> = Object.create(null)
 async function initParser() {
   const defaultModuleUrl = (pkgId: string) => getJsdelivrUrl(pkgId)
   const defaultInit = (url: string, pkgId: string, importMap?: ImportMap) =>
-    importUrl(url, !!importMap, importMap)
+    importModule(url, {
+      sandbox: !!importMap,
+      importMap,
+    })
   const {
     pkgName,
     getModuleUrl = defaultModuleUrl,

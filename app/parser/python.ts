@@ -30,7 +30,7 @@ const pyodide: Parser<Pyodide.PyodideAPI, Options> = {
     return (await this).version
   },
   async init(moduleUrl) {
-    const mod = await importUrl<typeof Pyodide>(moduleUrl)
+    const mod = await importModule<typeof Pyodide>(moduleUrl)
 
     const pyodide = await mod.loadPyodide({
       stdout: console.info,

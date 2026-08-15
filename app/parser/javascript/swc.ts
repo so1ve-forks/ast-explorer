@@ -45,7 +45,7 @@ export const swc: Parser<typeof Swc, Swc.ParseOptions> = {
   pkgName: '@swc/wasm-web',
   getModuleUrl: (pkgId) => getJsdelivrUrl(pkgId, `/wasm-web.js`),
   async init(url) {
-    const mod = await importUrl(url)
+    const mod = await importModule(url)
     await mod.default()
     return mod
   },
