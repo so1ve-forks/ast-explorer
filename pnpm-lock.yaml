@@ -276,37 +276,6 @@ importers:
 
   .:
     dependencies:
-      '@shikijs/monaco':
-        specifier: 'catalog:'
-        version: 4.4.2
-      '@typescript-eslint/parser':
-        specifier: catalog:parser
-        version: 8.66.0(eslint@10.8.1(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
-      '@vueuse/core':
-        specifier: 'catalog:'
-        version: 14.4.0(vue@3.5.41(typescript@6.0.3))
-      ansi-regex:
-        specifier: 'catalog:'
-        version: 6.2.2
-      fflate:
-        specifier: 'catalog:'
-        version: 0.8.3
-      json-to-ast:
-        specifier: catalog:parser
-        version: 2.1.0
-      json5:
-        specifier: 'catalog:'
-        version: 2.2.3
-      monaco-editor:
-        specifier: 'catalog:'
-        version: 0.56.0
-      shiki:
-        specifier: 'catalog:'
-        version: 4.4.2
-      vue:
-        specifier: 'catalog:'
-        version: 3.5.41(typescript@6.0.3)
-    devDependencies:
       '@actions/workflow-parser':
         specifier: catalog:parser
         version: 0.3.61
@@ -349,6 +318,9 @@ importers:
       '@nuxtjs/plausible':
         specifier: 'catalog:'
         version: 4.0.0(magic-string@1.1.0)(magicast@0.5.4)(oxc-parser@0.143.0)(rolldown@1.2.3)(unplugin@3.3.0(esbuild@0.28.2)(rolldown@1.2.3)(rollup@4.62.4)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(webpack@5.109.2(cssnano@8.0.5(postcss@8.5.26))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.26)))
+      '@shikijs/monaco':
+        specifier: 'catalog:'
+        version: 4.4.2
       '@solidity-parser/parser':
         specifier: catalog:parser
         version: 0.20.2
@@ -367,6 +339,9 @@ importers:
       '@types/json-to-ast':
         specifier: catalog:parser
         version: 2.1.4
+      '@typescript-eslint/parser':
+        specifier: catalog:parser
+        version: 8.66.0(eslint@10.8.1(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@unocss/eslint-plugin':
         specifier: 'catalog:'
         version: 66.7.5(eslint@10.8.1(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
@@ -379,6 +354,9 @@ importers:
       '@vue/compiler-sfc':
         specifier: catalog:parser
         version: 3.5.41
+      '@vueuse/core':
+        specifier: 'catalog:'
+        version: 14.4.0(vue@3.5.41(typescript@6.0.3))
       '@vueuse/nuxt':
         specifier: 'catalog:'
         version: 14.4.0(16b2a57c8953f13c8e4f7bec5aabd115)
@@ -394,6 +372,9 @@ importers:
       angular-html-parser:
         specifier: catalog:parser
         version: 10.11.0
+      ansi-regex:
+        specifier: 'catalog:'
+        version: 6.2.2
       bumpp:
         specifier: 'catalog:'
         version: 12.2.0
@@ -418,6 +399,9 @@ importers:
       esprima-next:
         specifier: catalog:parser
         version: 6.0.3
+      fflate:
+        specifier: 'catalog:'
+        version: 0.8.3
       flow-parser:
         specifier: catalog:parser
         version: 0.326.0
@@ -433,6 +417,12 @@ importers:
       jinx-rust:
         specifier: catalog:parser
         version: 0.1.6
+      json-to-ast:
+        specifier: catalog:parser
+        version: 2.1.0
+      json5:
+        specifier: 'catalog:'
+        version: 2.2.3
       jsonc-eslint-parser:
         specifier: catalog:parser
         version: 3.3.0
@@ -445,6 +435,9 @@ importers:
       meriyah:
         specifier: catalog:parser
         version: 7.3.1
+      monaco-editor:
+        specifier: 'catalog:'
+        version: 0.56.0
       nuxt:
         specifier: 'catalog:'
         version: 4.5.2(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@oxc-project/types@0.143.0)(@types/node@26.2.0)(@vue/compiler-sfc@3.5.41)(db0@0.3.4)(esbuild@0.28.2)(eslint@10.8.1(jiti@2.7.0)(supports-color@10.2.2))(ioredis@5.11.1(supports-color@10.2.2))(lightningcss@1.33.0)(magicast@0.5.4)(optionator@0.9.4)(oxc-parser@0.143.0)(rolldown@1.2.3)(rollup-plugin-visualizer@7.0.1(rolldown@1.2.3)(rollup@4.62.4))(rollup@4.62.4)(srvx@0.11.22)(supports-color@10.2.2)(terser@5.49.2)(typescript@6.0.3)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0))(vue-tsc@3.3.9(typescript@6.0.3))(webpack@5.109.2(cssnano@8.0.5(postcss@8.5.26))(csso@5.0.5)(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.26))(yaml@2.9.0)
@@ -496,6 +489,9 @@ importers:
       serve:
         specifier: 'catalog:'
         version: 14.2.6(supports-color@10.2.2)
+      shiki:
+        specifier: 'catalog:'
+        version: 4.4.2
       sql-parser-cst:
         specifier: catalog:parser
         version: 0.42.1
@@ -526,6 +522,9 @@ importers:
       vite:
         specifier: 'catalog:'
         version: 8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.2)(yaml@2.9.0)
+      vue:
+        specifier: 'catalog:'
+        version: 3.5.41(typescript@6.0.3)
       vue-tsc:
         specifier: 'catalog:'
         version: 3.3.9(typescript@6.0.3)
